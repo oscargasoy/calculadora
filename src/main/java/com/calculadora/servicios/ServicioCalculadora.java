@@ -20,32 +20,12 @@ public class ServicioCalculadora implements IServicioCalculadora {
     /**
      * Intentamos convertir la operación, sino podemos lanzamos un error,
      * y realizamos la operación correspondiente
-<<<<<<< HEAD
-     * @param Numero1
-     * @param Numero2
-=======
      * @param numero1
      * @param numero2
->>>>>>> 83ef775 (segundo commit)
      * @param operador
      * @return
      */
     @Override
-<<<<<<< HEAD
-    public double calcula(BigDecimal Numero1, BigDecimal Numero2, String operador) {
-
-        if (LOGGER.isDebugEnabled()) {
-            LOGGER.debug("Calculando resultado para : {} {} {}", Numero1, Numero2, operador);
-        }
-
-        Operaciones Operaciones = new Operaciones(operador);
-
-        if(Operaciones == null) {
-            throw new RuntimeException("Operación imposible de procesar: " + operador);
-        }
-        
-        return Operaciones.RealizarOperacion(Numero1,Numero2).doubleValue();
-=======
     public BigDecimal calcula(BigDecimal numero1, BigDecimal numero2, String operador) {
 
     	if (LOGGER.isDebugEnabled()) {
@@ -74,6 +54,5 @@ public class ServicioCalculadora implements IServicioCalculadora {
                 throw new RuntimeException("Operación no soportada para ser calculada: " + operacion.toString());
 
         }
->>>>>>> 83ef775 (segundo commit)
     }
 }
