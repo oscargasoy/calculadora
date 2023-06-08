@@ -16,6 +16,8 @@ public class ServicioCalculadora implements IServicioCalculadora {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ServicioCalculadora.class);
 
+    public ServicioCalculadora(){
+    }
 
     /**
      * Intentamos convertir la operación, sino podemos lanzamos un error,

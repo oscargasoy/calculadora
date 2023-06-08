@@ -11,7 +11,7 @@ Necesario disponer de la ultima versión de Maven instalada. Tambien hace falta 
 
 ## Como utilizar
 
-1. Descargar el repositorio girhub
+1. Descargar el repositorio github
 2. Ejecutar una verificación de Maven
 3. Instalación limpia de Maven
 4. Ejecutar el JAR de la carpeta /target

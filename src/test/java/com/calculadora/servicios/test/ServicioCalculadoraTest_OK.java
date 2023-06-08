@@ -4,15 +4,10 @@ import java.math.BigDecimal;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import com.calculadora.CalculadoraApplication;
 import com.calculadora.servicios.IServicioCalculadora;
+import com.calculadora.servicios.ServicioCalculadora;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest(classes = CalculadoraApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class ServicioCalculadoraTest_OK {
 	@Autowired
     private IServicioCalculadora servicioCalculadora;
@@ -23,6 +18,8 @@ class ServicioCalculadoraTest_OK {
 
         BigDecimal num1=new BigDecimal(11);
         BigDecimal num2=new BigDecimal(4);
+        
+        servicioCalculadora=new ServicioCalculadora();
         BigDecimal resultado = servicioCalculadora.calcula(num1, num2, "sumar");
 
         //Comprueba el resultado
@@ -36,6 +33,8 @@ class ServicioCalculadoraTest_OK {
 
         BigDecimal num1=new BigDecimal(11);
         BigDecimal num2=new BigDecimal(4);
+
+        servicioCalculadora=new ServicioCalculadora();
         BigDecimal resultado = servicioCalculadora.calcula(num1, num2, "restar");
 
         //Comprueba el resultado
@@ -49,6 +48,8 @@ class ServicioCalculadoraTest_OK {
 
         BigDecimal num1=new BigDecimal(11);
         BigDecimal num2=new BigDecimal(4);
+        
+        servicioCalculadora=new ServicioCalculadora();        
         BigDecimal resultado = servicioCalculadora.calcula(num1, num2, "dividir");
 
         //Comprueba el resultado
@@ -62,6 +63,8 @@ class ServicioCalculadoraTest_OK {
 
         BigDecimal num1=new BigDecimal(11);
         BigDecimal num2=new BigDecimal(4);
+        
+        servicioCalculadora=new ServicioCalculadora();        
         BigDecimal resultado = servicioCalculadora.calcula(num1, num2, "multiplicar");
 
         //Comprueba el resultado
