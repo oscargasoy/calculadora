@@ -64,7 +64,11 @@
 		    <artifactId>junit-platform-launcher</artifactId>
 		    <version>1.6.0</version>
 		    <scope>test</scope>
+<<<<<<< HEAD
 		</dependency>                
+=======
+		</dependency>        
+>>>>>>> 83ef775 (segundo commit)
     </dependencies>
 
 	<build>
