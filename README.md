@@ -18,7 +18,7 @@ Necesario disponer de la ultima versión de Maven instalada. Tambien hace falta 
 
 Abrir una consola y ejecutar:
 
-````
+`````
 git clone https://github.com/oscargasoy/calculadora
 cd calculadora
 
