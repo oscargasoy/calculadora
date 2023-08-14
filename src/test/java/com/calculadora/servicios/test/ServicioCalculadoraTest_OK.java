@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.calculadora.servicios.IServicioCalculadora;
 import com.calculadora.servicios.ServicioCalculadora;
 
+//Clase test de ServicioCalculadora 
 class ServicioCalculadoraTest_OK {
 	@Autowired
     private IServicioCalculadora servicioCalculadora;
