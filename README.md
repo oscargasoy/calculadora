@@ -21,6 +21,10 @@ Abrir una consola y ejecutar:
 ```
 git clone https://github.com/oscargasoy/calculadora
 cd calculadora
+
+instalar la libreria tracer
+mvn install:install-file -Dfile=lib\tracer-1.0.0.jar -DgroupId=tracer -DartifactId=tracer -Dversion=1 -Dpackaging=jar
+
 mvn validate
 mvn verify
 mvn clean install
